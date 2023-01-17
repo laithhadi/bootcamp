@@ -5,27 +5,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobby Site</title>
+    <title>Kitty World</title>
     <link rel="stylesheet" href="./assets/scss/main.scss">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-md-4 col-lg-8 justify-content-around d-flex flex-column">
-                <input type="text" class="form-control" placeholder="City" aria-label="City">
-                <button type="button" class="btn btn-primary">Primary</button>
-            </div>
-            <div class="col-sm-2 col-md-4 col-lg-2 justify-content-around d-flex flex-column">
-                <input type="text" class="form-control" placeholder="State" aria-label="State">
-                <button type="button" class="btn btn-secondary">Secondary</button>
-            </div>
-            <div class="col-sm-2 col-md-4 col-lg-2 justify-content-around d-flex flex-column">
-                <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
-                <button type="button" class="btn btn-success">Success</button>
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+                <img src="assets/img/logo.png" alt="my amazing kitty logo!">
+            </a>
+        </div>
+    </header>
+    <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade"
+        data-aos-delay="1500">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2>I'm <span>Laith Hadi</span> and this is my adventure with my cat, <span>Kippie</span>!</h2>
+                    <p>Have a look around!</p>
+                    <a href="#" class="btn-get-started">Love the journey? Contact me for more!</a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+        <section id="gallery" class="gallery">
+            <div class="container-fluid">
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="gallery-item h-100">
+                            <img src="assets/img/gallery/gallery1.jpg" class="img-fluid" alt="">
+                            <div class="gallery-links d-flex align-items-center justify-content-center">
+                                <a href="assets/img/gallery/gallery1.jpg" title="Gallery 1"
+                                    class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="gallery-item h-100">
+                            <img src="assets/img/gallery/gallery2.jpg" class="img-fluid" alt="">
+                            <div class="gallery-links d-flex align-items-center justify-content-center">
+                                <a href="assets/img/gallery/gallery2.jpg" title="Gallery 2"
+                                    class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="gallery-item h-100">
+                            <img src="assets/img/gallery/gallery3.jpg" class="img-fluid" alt="">
+                            <div class="gallery-links d-flex align-items-center justify-content-center">
+                                <a href="assets/img/gallery/gallery3.jpg" title="Gallery 3"
+                                    class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="gallery-item h-100">
+                            <img src="assets/img/gallery/gallery4.jpg" class="img-fluid" alt="">
+                            <div class="gallery-links d-flex align-items-center justify-content-center">
+                                <a href="assets/img/gallery/gallery4.jpg" title="Gallery 4"
+                                    class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="gallery-item h-100">
+                            <img src="assets/img/gallery/gallery5.jpg" class="img-fluid" alt="">
+                            <div class="gallery-links d-flex align-items-center justify-content-center">
+                                <a href="assets/img/gallery/gallery5.jpg" title="Gallery 5"
+                                    class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="gallery-item h-100">
+                            <img src="assets/img/gallery/gallery6.jpg" class="img-fluid" alt="">
+                            <div class="gallery-links d-flex align-items-center justify-content-center">
+                                <a href="assets/img/gallery/gallery6.jpg" title="Gallery 6"
+                                    class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="gallery-item h-100">
+                            <img src="assets/img/gallery/gallery7.jpg" class="img-fluid" alt="">
+                            <div class="gallery-links d-flex align-items-center justify-content-center">
+                                <a href="assets/img/gallery/gallery7.jpg" title="Gallery 7"
+                                    class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="gallery-item h-100">
+                            <img src="assets/img/gallery/gallery10.jpg" class="img-fluid" alt="">
+                            <div class="gallery-links d-flex align-items-center justify-content-center">
+                                <a href="assets/img/gallery/gallery10.jpg" title="Gallery 8"
+                                    class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                                <a href="#" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Laith Hadi</span></strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer>
     <script type="module" src="./assets/js/main.js"></script>
 </body>
 
