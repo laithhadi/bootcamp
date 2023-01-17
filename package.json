@@ -1,6 +1,6 @@
 {
-  "name": "bootcamp",
   "description": "Code for web dev bootcamp",
+  "name": "bootcamp",
   "version": "1.0.0",
   "source": "./src/index.html",
   "scripts": {
