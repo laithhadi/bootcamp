@@ -52,6 +52,9 @@
     <main id="main" data-aos="slide-down" data-aos-delay="500">
   <div class="page-header d-flex align-items-center">
     <div class="container position-relative">
+      <div class="alert alert-success" id="success-alert">
+        <strong>Success!</strong>
+      </div>
       <div class="row d-flex justify-content-center">
         <div class="col-lg-6 text-center">
           <h2>Contact</h2>
@@ -97,7 +100,7 @@
         </div>
         <div class="row justify-content-center mt-4">
           <div class="col-lg-9">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form method="post" onsubmit="return false;" role="form" id="contactForm" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -117,7 +120,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button id="sendMsg" type="submit">Send Message</button></div>
             </form>
           </div>
         </div>
@@ -133,6 +136,22 @@
     </div>
   </footer>
   <script type="module" src="./assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script>
+    $(document).ready(function () {
+        $("#success-alert").hide();
+        let form = document.getElementById("contactForm");
+
+        $("#sendMsg").click(function showAlert() {
+          if (form.checkValidity()) {
+             $("#success-alert").fadeTo(1000, 500).slideUp(500, function () {
+              $("#success-alert").slideUp(500);
+              form.reset();
+            });
+          }
+        });
+      });
+  </script>
 </body>
 
 </html>
