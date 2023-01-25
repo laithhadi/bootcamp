@@ -1,5 +1,4 @@
-# bootcamp
-Code for web dev bootcamp
+# Kitty World website
 
 Libaries/framework used:
 - Bootstrap - https://getbootstrap.com/docs/5.3/getting-started
